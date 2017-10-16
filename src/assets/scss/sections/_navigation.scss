@@ -1,0 +1,48 @@
+$navigation-offset: 40px;
+
+.navigation {
+  position: fixed;
+  padding-top: $navigation-offset;
+  padding-bottom: $navigation-offset;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .container {
+    display: flex;
+  }
+
+  &__logo,
+  &__menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {    
+    margin-left: auto;
+  }
+
+  &__menu-item {
+    font-size: $font-size-small;
+    font-family: $font-family-sans;
+    color: $blue-darker;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: $navigation-offset;
+    letter-spacing: 0.88px;
+
+    .icon {
+      fill: $white;
+      margin-right: 5px;
+    }
+    
+    &:last-of-type {
+      margin-right: 0px;
+    }
+
+    &:hover,
+    &--is-active {
+      color: $white;
+    }
+  }
+}

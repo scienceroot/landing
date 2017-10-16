@@ -1,0 +1,29 @@
+$science-offset: 100px;
+
+.science {
+  background-position: 50vw center;  
+
+  .title {
+    text-align: center;
+  }
+
+  .box--is-solid {
+    margin-left: -50px;
+  }
+
+  &__diagram {    
+    margin: $science-offset auto;
+    text-align: center;
+
+    p {
+      margin-top: 30px;
+      color: $blue-lighter;
+      font-size: $font-size-medium;
+
+      span {
+        display: inline-block;
+        margin: 0 30px;
+      }
+    }
+  }  
+}

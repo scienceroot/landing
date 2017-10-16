@@ -1,0 +1,22 @@
+<svg viewBox="0 0 102 99" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient x1="50%" y1="115.859%" x2="50%" y2="0%" id="c">
+      <stop stop-color="#FFF" offset="0%"/>
+      <stop stop-color="#667294" offset="100%"/>
+    </linearGradient>
+    <path d="M35.37 61.938l9.428-5.91V44.84v11.19l9.637 5.908-9.637-5.91-9.428 5.91zM0 87.618v-6.894c.06-2.142.677-3.764 1.847-4.866 1.756-1.654 5.288-2.57 6.997-2.103 1.708.468 5.753 5.855 6.824 5.88 1.07.026 4.946-5.182 6.43-5.66 1.48-.476 4.81-.085 7.084 1.51 1.516 1.065 2.31 2.778 2.386 5.14v6.993M0 87.618v-6.894c.06-2.142.677-3.764 1.847-4.866 1.756-1.654 5.288-2.57 6.997-2.103 1.708.468 5.753 5.855 6.824 5.88 1.07.026 4.946-5.182 6.43-5.66 1.48-.476 4.81-.085 7.084 1.51 1.516 1.065 2.31 2.778 2.386 5.14v6.993m-15.863-19.91c4.796 0 8.684-3.887 8.684-8.683 0-4.795-3.89-8.682-8.685-8.682-4.796 0-8.684 3.887-8.684 8.682 0 4.796 3.89 8.683 8.685 8.683zm42.68 19.91v-6.894c.06-2.142.677-3.764 1.848-4.866 1.756-1.654 5.288-2.57 6.996-2.103 1.708.468 5.753 5.855 6.823 5.88 1.07.026 4.947-5.182 6.43-5.66 1.482-.476 4.81-.085 7.084 1.51 1.516 1.065 2.312 2.778 2.387 5.14v6.993M74.09 67.708c4.797 0 8.685-3.887 8.685-8.683 0-4.795-3.888-8.682-8.684-8.682-4.795 0-8.683 3.887-8.683 8.682 0 4.796 3.888 8.683 8.684 8.683zM29.194 37.37v-6.893c.06-2.143.676-3.765 1.847-4.867 1.756-1.653 5.288-2.57 6.996-2.102 1.71.467 5.754 5.854 6.824 5.88 1.07.025 4.947-5.182 6.43-5.66 1.482-.477 4.81-.086 7.085 1.51 1.515 1.064 2.31 2.777 2.386 5.14v6.993M44.9 17.46c4.796 0 8.684-3.887 8.684-8.682S49.694.095 44.898.095c-4.796 0-8.684 3.888-8.684 8.683s3.888 8.682 8.684 8.682z" id="b"/>
+    <filter x="-9.4%" y="-7.4%" width="118.9%" height="119.4%" filterUnits="objectBoundingBox" id="a">
+      <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feMorphology radius="1.5" in="SourceAlpha" result="shadowInner"/>
+      <feOffset dy="2" in="shadowInner" result="shadowInner"/>
+      <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0" in="shadowBlurOuter1"/>
+    </filter>
+  </defs>
+  <g transform="translate(6 4)" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+    <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+    <use stroke="url(#c)" stroke-width="3" xlink:href="#b"/>
+  </g>
+</svg>

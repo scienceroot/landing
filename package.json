@@ -1,0 +1,33 @@
+{
+  "name": "scienceroot",
+  "version": "0.0.1",
+  "description": "Scienceroot.com landing page",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  },
+  "scripts": {
+    "start:development": "gulp",
+    "build": "gulp dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scienceroot/landing.git"
+  },
+  "keywords": [
+    "landing",
+    "css",
+    "html"
+  ],
+  "author": "Balaj Marius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scienceroot/landing/issues"
+  },
+  "homepage": "https://github.com/scienceroot/landing#readme"
+}

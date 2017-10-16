@@ -1,0 +1,51 @@
+$guarantees-offset: 100px;
+
+.guarantees {
+  text-align: center;
+  background-position: -50vw center;
+
+  &__about {
+    margin-top: $guarantees-offset;
+    margin-bottom: $guarantees-offset;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    h2 {
+      font-size: $font-size-large;
+      margin-bottom: 10px;          
+    }
+
+    .icon-checkmark {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
+
+    .paragraph {
+      font-size: $font-size-small;
+    }
+
+    .box {
+      margin: 0 auto 40px;
+    }
+
+    .grid__cell {
+      width: 33%;
+      max-width: 280px;
+    }
+  }
+
+  &__secured {
+    margin: 0 auto;    
+    padding-bottom: 30px;    
+    max-width: $container-width-small;
+    border-bottom: 4px solid transparentize($blue-base, 0.6);
+
+    .title {
+      font-size: $font-size-large;
+      text-align: left;
+      margin-bottom: 0px;
+      margin-left: 30px;
+    }
+  }
+}

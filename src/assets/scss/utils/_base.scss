@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  background: $black;
+  color: $white;
+}
+
+section {
+  padding-top: 180px;  
+  line-height: 1.4;
+  background-image: url('../images/world.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

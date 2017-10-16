@@ -1,0 +1,16 @@
+$black-darker: #070700;
+
+.video {
+  text-align: center;
+  background-image: none;  
+
+  .title {
+    font-size: $font-size-h2;
+  }
+
+  &__box {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px $black-darker;
+  }
+}

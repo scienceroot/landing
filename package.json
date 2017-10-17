@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start:development": "gulp",
-    "build": "gulp dist"
+    "build": "gulp dist",
+    "deploy": "surge"
   },
   "repository": {
     "type": "git",

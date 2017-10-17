@@ -16,3 +16,9 @@ npm run start:development
 ```bash
 npm run build
 ```
+
+### Deploy ☁️
+
+```bash
+npm run deploy
+```

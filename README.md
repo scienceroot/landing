@@ -8,11 +8,11 @@
 ### Develop 🛠
 
 ```bash
-yarn start:development
+npm run start:development
 ```
 
 ### Build 📦
 
 ```bash
-yarn build
+npm run build
 ```

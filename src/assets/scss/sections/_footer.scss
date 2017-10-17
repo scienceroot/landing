@@ -37,5 +37,17 @@
   &__copyright {
     font-size: $font-size-small;
     color: $gray-lighter;
+    display: flex;
+    align-items: center;
+    
+    p:before {
+      content: '|';
+      display: inline-block;
+      margin: 0 20px;
+    }
+
+    img {
+      height: auto;      
+    }
   }
 }

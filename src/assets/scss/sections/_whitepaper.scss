@@ -1,0 +1,32 @@
+.whitepaper {
+  padding-top: 80px;
+  text-align: center;
+  background-image: none;
+
+  p {
+    font-size: $font-size-small;
+    margin-bottom: 10px;
+  }
+
+  i {
+    flex: 1;      
+    height: 2px;
+    background: transparentize($blue-base, 0.8);
+  }
+
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .button {    
+    margin-left: 10px;
+    margin-right: 10px;
+
+    img {
+      width: 24px;
+      margin-right: 10px;
+    }
+  }
+}

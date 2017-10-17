@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 100px;
+
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;  
+
+    img {
+      display: block;
+    }
+
+    a {
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    li {
+      flex: 1;
+      display: flex;      
+      background: $blue-darker;      
+      border-right: 2px solid $black;
+      min-height: 70px;
+
+      &:last-of-type {
+        border-right: none;
+      }
+    }    
+  }
+}

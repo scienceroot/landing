@@ -13,31 +13,38 @@
   background: $blue-base;
   padding-left: 25px;
   padding-right: 25px;
-  border-radius: 25px;
   display: flex;
   color: $white;
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.88px;
   font-family: $font-family-sans;
+  border-radius: 999px;
   
   &--is-medium {
-    line-height: 56px;
-    border-radius: 999px;
+    line-height: 56px;    
     padding-left: 35px;
     padding-right: 35px;
     font-size: $font-size-medium;
+  }
+
+  &--is-large {
+    font-size: $font-size-large;
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 75px;
   }
 }
 
 .title {  
   color: $white;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  line-height: 1;
   font-size: $font-size-h1;
 }
 
 .paragraph {
-  color: $blue-lighter;
+  color: $gray-lighter;
   font-size: $font-size-h3;
 }
 

@@ -41,3 +41,14 @@ table {
 
 a {
   text-decoration: none; }
+
+input,
+button {
+  outline: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-family: $font-family-base; }
+
+button {
+  cursor: pointer; }

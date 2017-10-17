@@ -13,3 +13,16 @@ section {
   background-position: center;
   background-size: cover;
 }
+
+::-webkit-input-placeholder {
+  color: $gray-lighter;
+}
+::-moz-placeholder {
+  color: $gray-lighter;
+}
+:-ms-input-placeholder {
+  color: $gray-lighter;
+}
+:-moz-placeholder {
+  color: $gray-lighter;
+}

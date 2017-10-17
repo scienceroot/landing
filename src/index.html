@@ -13,12 +13,20 @@
   <div class="navigation">
     <div class="container container--is-large">
       <ul class="navigation__menu">
-        <li class="navigation__menu-item navigation__menu-item--is-active">How it works</li>
-        <li class="navigation__menu-item">People</li>
-        <li class="navigation__menu-item">Roadmap</li>
-        <li class="navigation__menu-item">Contact</li>
+        <li class="navigation__menu-item navigation__menu-item--is-active">
+          <a href="#science" data-scroll>How it works</a>
+        </li>
         <li class="navigation__menu-item">
-          <a href="#" class="button">
+          <a href="#team" data-scroll>People</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a href="#roadmap" data-scroll>Roadmap</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a href="#subscribe" data-scroll>Subscribe</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a href="#whitepaper" class="button" data-scroll>
             <img src="assets/images/download.svg" width="14" class="icon icon-download" /> Whitepaper
           </a>
         </li>
@@ -26,53 +34,51 @@
     </div>
   </div>
 
-  <section class="introduction">
+  <section class="introduction" id="introduction">
     <div class="container">
-      <img src="assets/images/logo.svg" width="170" class="icon-logo icon">
+      <img src="assets/images/logo.svg" width="170" class="icon-logo icon" data-animate-introduction>
 
-      <h1 class='title'>Scienceroot</h1>
-      <h2>The future of science is here.</h2>
-      <p class="paragraph">We are the first blockchain-based scientific
-        <br/>collaboration platform and journal.</p>
+      <h1 class="title" data-animate-introduction>Scienceroot</h1>
+      <h2 data-animate-introduction>The future of science is here.</h2>
+      <p class="paragraph" data-animate-introduction>We are the first blockchain-based scientific<br/>collaboration platform and journal.</p>
 
-      <a href='#' class='button button--is-medium'>
+      <a href="#" class="button button--is-medium" data-animate-introduction>
         How it works?
         <img src="assets/images/arrow.svg" width="18" class="icon-arrow icon" />
       </a>
     </div>
   </section>
 
-  <section class="science">
+  <section class="science" id="science">
     <div class="container">
-      <h1 class="title">Science Token</h1>
-      <p class="paragraph">We are combining everything a scientist needs into one universal platform on the ethereum blockchain to create a more
+      <h1 class="title" data-animate-science>Science Token</h1>
+      <p class="paragraph" data-animate-science>We are combining everything a scientist needs into one universal platform on the ethereum blockchain to create a more
         efficient, intuitive and transparent scientific platform.</p>
 
       <div class="science__diagram">
         <div class="grid">
-          <div class="box">
+          <div class="box" data-animate-science>
             <img src="assets/images/etherum.svg" height="90" class="icon icon-etherum" />
           </div>
-          <div class="box box--is-solid">
+          <div class="box box--is-solid" data-animate-science>
             <img src="assets/images/dna.svg" height="90" class="icon icon-dna" />
           </div>
         </div>
 
-        <p>Etherum
-          <span>+</span> Science</p>
+        <p data-animate>Etherum<span>+</span> Science</p>
       </div>
 
-      <p class="paragraph">Our scientific ecosystem will be powered by its own unique currency Science Token (ST).</p>
+      <p class="paragraph" data-animate-science>Our scientific ecosystem will be powered by its own unique currency Science Token (ST).</p>
     </div>
   </section>
 
-  <section class="guarantees">
+  <section class="guarantees" id="guarantees">
     <div class="container">
-      <h1 class="title">Everything covered</h1>
-      <p class="paragraph">Scienceroot will cover the main needs of every scientist.</p>
+      <h1 class="title" data-animate-guarantees>Everything covered</h1>
+      <p class="paragraph" data-animate-guarantees>Scienceroot will cover the main needs of every scientist.</p>
 
       <div class="grid guarantees__about">
-        <div class="grid__cell">
+        <div class="grid__cell" data-animate-guarantees>
           <div class="box box--is-solid">
             <img src="assets/images/collaboration.svg" height="90" class="icon icon-collaboration" />
           </div>
@@ -83,7 +89,7 @@
           <p class="paragraph">Ask questions, exchange ideas, find peers, discuss research, transfer funds.</p>
         </div>
 
-        <div class="grid__cell">
+        <div class="grid__cell" data-animate-guarantees>
           <div class="box box--is-solid">
             <img src="assets/images/funding.svg" height="90" class="icon icon-funding" />
           </div>
@@ -94,7 +100,7 @@
           <p class="paragraph">Find partners, secure funding, help others.</p>
         </div>
 
-        <div class="grid__cell">
+        <div class="grid__cell" data-animate-guarantees>
           <div class="box box--is-solid">
             <img src="assets/images/journal.svg" height="90" class="icon icon-journal" />
           </div>
@@ -106,27 +112,27 @@
         </div>
       </div>
 
-      <div class="grid guarantees__secured">
+      <div class="grid guarantees__secured" data-animate-guarantees>
         <img class="grid__cell" src="assets/images/lock.svg" height="62" />
         <h2 class="title grid__cell">Everything will be accessible through one account to which only you will have the key.</h2>
       </div>
     </div>
   </section>
 
-  <section class="video">
+  <section class="video" id="video">
     <div class="container">
-      <h1 class="title">Check out this short introduction video to Scienceroot</h1>
-      <iframe class="video__box" width="900" height="450" src="https://www.youtube.com/embed/tPzJbDI1yxo" frameborder="0" allowfullscreen></iframe>
+      <h1 class="title" data-animate-video>Check out this short introduction video to Scienceroot</h1>
+      <iframe class="video__box" width="900" height="450" src="https://www.youtube.com/embed/tPzJbDI1yxo" frameborder="0" allowfullscreen data-animate-video></iframe>
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container container--is-large">
-      <h1 class="title">Get involved</h1>
-      <p class="paragraph">Our current team of advisors</p>
+      <h1 class="title" data-animate-team>Get involved</h1>
+      <p class="paragraph" data-animate-team>Our current team of advisors</p>
 
       <div class="team__members">
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/81.jpg" />
           <h2>Dominic Brant</h2>
           <p>Blockchain Developer</p>
@@ -140,7 +146,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/82.jpg" />
           <h2>Dillan Reggie</h2>
           <p>Blockchain Developer</p>
@@ -154,7 +160,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/83.jpg" />
           <h2>Lewis Benjamin</h2>
           <p>Founder</p>
@@ -168,7 +174,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/84.jpg" />
           <h2>Parris Madison</h2>
           <p>Co-Founder</p>
@@ -182,7 +188,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/89.jpg" />
           <h2>Scott Yale</h2>
           <p>Marketing</p>
@@ -196,7 +202,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/86.jpg" />
           <h2>Norma Darnell</h2>
           <p>Advisor</p>
@@ -210,7 +216,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/87.jpg" />
           <h2>Dominic Brant</h2>
           <p>Advisor</p>
@@ -224,7 +230,7 @@
           </div>
         </div>
 
-        <div class="team__member">
+        <div class="team__member" data-animate-team-member>
           <img src="https://randomuser.me/api/portraits/men/88.jpg" />
           <h2>Norbert Wilson</h2>
           <p>Advisor</p>
@@ -241,19 +247,19 @@
     </div>
   </section>
 
-  <section class="roadmap">
+  <section class="roadmap" id="roadmap">
     <div class="container">
-      <h1 class="title">Roadmap</h1>
-      <p class="paragraph">Track our current progress</p>
+      <h1 class="title" data-animate-roadmap>Roadmap</h1>
+      <p class="paragraph" data-animate-roadmap>Track our current progress</p>
     </div>
   </section>
 
-  <section class="subscribe">
+  <section class="subscribe" id="subscribe">
     <div class="container container--is-large">
-      <h1 class="title">Keep in touch!</h1>
-      <p class="paragraph">Drop your email below to get updates</p>
+      <h1 class="title" data-animate-subscribe>Keep in touch!</h1>
+      <p class="paragraph" data-animate-subscribe>Drop your email below to get updates</p>
 
-      <form>
+      <form data-animate-subscribe>
         <input type="text" placeholder="E-mail" />
         <button>
           <img src="assets/images/arrow-submit.svg" width="28" />
@@ -262,11 +268,11 @@
     </div>
   </section>
 
-  <section class="whitepaper">
+  <section class="whitepaper" id="whitepaper">
     <div class="container container--is-large">
-      <p class="paragraph">Download the Whitepaper</p>
+      <p class="paragraph" data-animate-whitepaper>Download the Whitepaper</p>
 
-      <div class="grid">
+      <div class="grid" data-animate-whitepaper>
         <i></i>
         <button class="button button--is-large">
           <img src="assets/images/download.svg" width="14" class="icon icon-download" /> Whitepaper
@@ -279,46 +285,56 @@
   <footer class="footer">
     <div class="container container--is-large">
       <ul class="footer__social">
-        <li>
+        <li data-animate-footer>
           <a href="#">
             <img src="assets/images/facebook.svg" />
           </a>
         </li>
 
-        <li>
+        <li data-animate-footer>
           <a href="#">
             <img src="assets/images/twitter.svg" />
           </a>
         </li>
 
-        <li>
+        <li data-animate-footer>
           <a href="#">
             <img src="assets/images/github.svg" />
           </a>
         </li>
 
-        <li>
+        <li data-animate-footer>
           <a href="#">
             <img src="assets/images/reddit.svg" />
           </a>
         </li>
 
-        <li>
+        <li data-animate-footer>
           <a href="#">
             <img src="assets/images/slack.svg" />
           </a>
         </li>
 
-        <li>
+        <li data-animate-footer>
           <a href="#">
             <img src="assets/images/telegram.svg" />
           </a>
         </li>
       </ul>
-    </div>
+
+      <div class="footer__copyright" data-animate-footer>
+        <p>&copy; ScienceRoot 2017. All rights reserved.</p>
+      </div>
+    </div>    
   </footer>
 
+  <a href="#introduction" class="goup" data-scroll>
+    <img src="assets/images/arrow.svg"/>
+  </a>
+
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

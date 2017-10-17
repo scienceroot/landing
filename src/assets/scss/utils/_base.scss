@@ -14,6 +14,36 @@ section {
   background-size: cover;
 }
 
+.goup {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: $blue-base;
+  z-index: 999;
+  width: 50px;
+  display: flex;
+  height: 50px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: $transition linear;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+
+  img {
+    width: 20px;
+    height: auto;
+    transform: rotate(-90deg);
+  }
+}
+
 ::-webkit-input-placeholder {
   color: $gray-lighter;
 }

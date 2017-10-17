@@ -4,6 +4,8 @@ $navigation-offset: 40px;
   position: fixed;
   padding-top: $navigation-offset;
   padding-bottom: $navigation-offset;
+  transition: $transition linear;
+  z-index: 999;
   top: 0;
   left: 0;
   right: 0;
@@ -12,37 +14,53 @@ $navigation-offset: 40px;
     display: flex;
   }
 
+  .button {
+    color: $white;
+  }
+
+  &--is-fixed {
+    position: fixed;
+    background: $black;
+    padding-top: $navigation-offset/4;
+    padding-bottom: $navigation-offset/4;
+  }
+
   &__logo,
   &__menu {
     display: flex;
     align-items: center;
   }
 
-  &__menu {    
+  &__menu {
     margin-left: auto;
   }
 
   &__menu-item {
     font-size: $font-size-small;
     font-family: $font-family-sans;
-    color: $gray-darker;
     text-transform: uppercase;
     cursor: pointer;
     margin-right: $navigation-offset;
     letter-spacing: 0.88px;
 
+    a {
+      color: $gray-darker;
+    }
+
     .icon {
       fill: $white;
       margin-right: 5px;
     }
-    
+
     &:last-of-type {
       margin-right: 0px;
     }
 
     &:hover,
     &--is-active {
-      color: $white;
+      a {
+        color: $white;
+      }
     }
   }
 }

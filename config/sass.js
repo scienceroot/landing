@@ -9,7 +9,7 @@ const bundle = browserSync => {
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
     .pipe(autoprefix({ browsers: ['last 5 versions', 'ie 10'] }))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .pipe(gulp.dest('./src/assets/dist'))
     .pipe(browserSync.stream())
 

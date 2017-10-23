@@ -1,4 +1,8 @@
-.introduction {  
+.introduction { 
+  
+  @media #{$small-and-down} {
+    padding-top: 80px;
+  }
 
   h1 {
     font-family: $font-family-sans;

@@ -204,7 +204,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .roadmap .title, .roadmap .paragraph { text-align: center; }
 
-.roadmap__timeline { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 100px; margin-left: auto; margin-right: auto; text-align: center; padding-left: 100px; padding-right: 100px; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; min-height: 100px; }
+.roadmap__timeline { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 100px; margin-left: auto; margin-right: auto; text-align: center; padding-left: 100px; padding-right: 100px; position: relative; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; min-height: 100px; }
 
 @media only screen and (max-width: 1200px) { .roadmap__timeline { padding-left: 50px; padding-right: 50px; } }
 

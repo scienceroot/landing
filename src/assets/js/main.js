@@ -30,6 +30,7 @@ var sl = new SmoothScroll('[data-scroll]');
 // elements
 var goup = document.querySelector('.goup');
 var header = document.querySelector('.navigation');
+var sections = Array.from(document.querySelectorAll('section'));
 
 /**
  * @description fixed navigation
@@ -48,7 +49,7 @@ function onNavigation(scrollTop) {
  * @description menu change
  */
 function onMenu(scrollTop) {
-  
+
 }
 
 /**

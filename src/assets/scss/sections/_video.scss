@@ -4,6 +4,10 @@ $black-darker: #070700;
   text-align: center;
   background-image: none;  
 
+  iframe {
+    width: 100%;
+  }
+
   .title {
     font-size: $font-size-h2;
     line-height: 1.4;

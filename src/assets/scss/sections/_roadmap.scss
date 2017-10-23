@@ -1,7 +1,94 @@
 .roadmap {
-  
+
   .title,
   .paragraph {
     text-align: center;
+  }
+
+  &__timeline {
+    display: flex;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100px;
+    align-items: flex-start;    
+  }
+
+  &__timeline-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    > div {
+      position: relative;
+    }
+
+    i {      
+      width: 8px;
+      height: 8px;
+      display: block;
+      border-radius: 50%;
+      background: $blue-lighter;
+      border: 2px solid $black;
+    }
+
+    p,
+    small {      
+      left: 50%;
+      width: 130px;
+      position: absolute;      
+      transform: translateX(-50%);
+    }
+
+    p {
+      top: 30px;
+      color: $gray-lighter;
+      font-size: $font-size-base;      
+    }
+
+    small {
+      top: -40px;
+      color: $gray-darker;
+      font-size: $font-size-small;      
+    }
+    
+    &:after {
+      content: '';
+      height: 2px;
+      width: 100%;      
+      display: block;      
+      background: $blue-lighter;
+    }
+
+    &--is-progress {
+
+      i {
+        background: $blue-base;
+        border: 2px solid $blue-base;
+        box-shadow: 0 0 15px $blue-base;        
+      }
+    }
+
+    &--is-complete {
+
+      i {        
+        background: $green-base;
+      }
+
+      &:after {
+        background: $blue-base;
+      }
+    }
+
+    &--is-last {
+      flex: initial;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }

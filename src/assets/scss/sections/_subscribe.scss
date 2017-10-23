@@ -12,7 +12,7 @@
     padding-right: 20px;
     padding-bottom: 20px;
     align-items: center;
-    border-bottom: 2px solid transparentize($blue-base, 0.6);
+    border-bottom: 2px solid $blue-lighter;
 
     img {
       display: block;

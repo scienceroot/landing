@@ -32,18 +32,33 @@ var goup = document.querySelector('.goup');
 var header = document.querySelector('.navigation');
 
 /**
- * @description fire when document is scrolling
+ * @description fixed navigation
  */
-function onScroll() {
-  var scrollTop = document.documentElement.scrollTop;
-  
+function onNavigation(scrollTop) {
   if (scrollTop) {
     goup.classList.add('goup--is-visible');
     header.classList.add('navigation--is-fixed');
   } else {
     goup.classList.remove('goup--is-visible');
     header.classList.remove('navigation--is-fixed');
-  }  
+  }
+}
+
+/**
+ * @description menu change
+ */
+function onMenu(scrollTop) {
+  
+}
+
+/**
+ * @description fire when document is scrolling
+ */
+function onScroll() {
+  var scrollTop = document.documentElement.scrollTop;
+  
+  onMenu(scrollTop);
+  onNavigation(scrollTop);
 }
 
 /**

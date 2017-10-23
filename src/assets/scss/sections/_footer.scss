@@ -26,7 +26,12 @@
       display: flex;
       background: $blue-darker;
       border-right: 2px solid $black;
+      transition: $transition;      
       min-height: 70px;
+
+      &:hover {
+        background: $blue-base;
+      }
 
       &:last-of-type {
         border-right: none;

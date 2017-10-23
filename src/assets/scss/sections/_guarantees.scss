@@ -39,7 +39,7 @@ $guarantees-offset: 100px;
     margin: 0 auto;    
     padding-bottom: 30px;    
     max-width: $container-width-small;
-    border-bottom: 4px solid transparentize($blue-base, 0.6);
+    border-bottom: 4px solid $blue-lighter;
 
     .title {
       font-size: $font-size-large;

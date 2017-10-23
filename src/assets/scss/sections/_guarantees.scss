@@ -10,6 +10,13 @@ $guarantees-offset: 100px;
     justify-content: space-between;
     align-items: flex-start;
 
+    @media #{$small-and-down} {
+      align-items: center;
+      margin-top: 70px;
+      margin-bottom: 100px;
+      flex-direction: column;
+    }
+
     h2 {
       font-size: $font-size-large;
       margin-bottom: 10px;          
@@ -26,12 +33,26 @@ $guarantees-offset: 100px;
     }
 
     .box {
-      margin: 0 auto 40px;      
+      margin: 0 auto 40px;
+      
+      @media #{$small-and-down} {
+        margin: 0 auto 30px;
+      }
     }
 
     .grid__cell {
       width: 33%;
       max-width: 280px;
+
+      @media #{$small-and-down} {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+
+        &:last-of-type {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 
@@ -47,6 +68,10 @@ $guarantees-offset: 100px;
       margin-bottom: 0px;
       margin-left: 30px;
       line-height: 1.4;
+
+      @media #{$small-and-down} {
+        font-size: $font-size-medium;
+      }
     }
   }
 }

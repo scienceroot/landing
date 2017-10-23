@@ -13,16 +13,27 @@
 
   p {    
     text-align: center;
+    
+    @media #{$small-and-down} {
+      br {
+        display: none;
+      }
+    }
   }
 
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .button {
     margin-top: 80px;
+
+    @media #{$small-and-down} {
+      margin-top: 60px;
+    }
 
     .icon {
       fill: $white;
@@ -32,5 +43,9 @@
 
   .icon-logo {
     margin-bottom: 50px;
+
+    @media #{$small-and-down} {
+      max-width: 120px;
+    }
   }
 }

@@ -2,6 +2,10 @@ $team-offset: 100px;
 
 .team {
   text-align: center;
+  
+  @media #{$small-and-down} {
+    background-size: 100% auto;
+  }
 
   &__members {
     display: flex;
@@ -9,6 +13,11 @@ $team-offset: 100px;
     margin-top: 100px;
     flex-wrap: wrap;
     margin-bottom: -60px;
+
+    @media #{$small-and-down} {
+      margin-top: 70px;
+      margin-bottom: -40px;
+    }
   }
 
   &__member {
@@ -17,6 +26,10 @@ $team-offset: 100px;
     padding-left: 20px;
     padding-bottom: 60px;
 
+    @media #{$small-and-down} {
+      padding-bottom: 40px;
+    }
+
     // avatar
     > img {
       display: block;
@@ -24,13 +37,17 @@ $team-offset: 100px;
       border-radius: 50%;      
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }    
 
     // name
     h2 {
       font-size: $font-size-large;
       color: $gray-lighter;
+
+      @media #{$medium-and-down} {
+        font-size: $font-size-large;
+      }
     }
 
     // title
@@ -38,6 +55,10 @@ $team-offset: 100px;
       color: $gray-darker;
       font-size: $font-size-medium;
       margin-bottom: 10px;
+
+      @media #{$medium-and-down} {
+        font-size: $font-size-base;
+      }
     }
 
     // social

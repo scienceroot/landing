@@ -12,6 +12,11 @@
 
     img {
       display: block;
+
+      @media #{$small-and-down} {
+        height: 20px;
+        width: auto;
+      }
     }
 
     a {
@@ -29,13 +34,17 @@
       transition: $transition;      
       min-height: 70px;
 
+      @media #{$small-and-down} {
+        min-height: 60px;
+      }
+
       &:hover {
         background: $blue-base;
       }
 
       &:last-of-type {
         border-right: none;
-      }
+      }      
     }
   }
 
@@ -44,15 +53,29 @@
     color: $gray-lighter;
     display: flex;
     align-items: center;
+
+    @media #{$small-and-down} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     
     p:before {
       content: '|';
       display: inline-block;
       margin: 0 20px;
+      
+      @media #{$small-and-down} {
+        content: '';
+        margin: 0px;
+      }
     }
 
     img {
-      height: auto;      
+      height: auto;    
+      
+      @media #{$small-and-down} {
+        margin-bottom: 20px;
+      }
     }
   }
 }

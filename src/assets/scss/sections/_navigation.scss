@@ -10,8 +10,16 @@ $navigation-offset: 40px;
   left: 0;
   right: 0;
 
+  @media #{$small-and-down} {
+    display: none;
+  }
+  
   .container {
     display: flex;
+
+    @media #{$medium-and-down} {
+      width: 95%;
+    }
   }
 
   .button {
@@ -49,6 +57,11 @@ $navigation-offset: 40px;
     cursor: pointer;
     margin-right: $navigation-offset;
     letter-spacing: 0.88px;
+
+    @media #{$medium-and-down} {
+      margin-right: 20px;
+      font-size: $font-size-little;
+    }
 
     a {
       color: $gray-darker;

@@ -33,6 +33,13 @@
     padding-left: 40px;
     padding-right: 40px;
     line-height: 75px;
+
+    @media #{$small-and-down} {
+      line-height: 55px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: $font-size-medium;
+    }
   }
 }
 
@@ -45,6 +52,11 @@
   @media #{$medium-and-down} {
     font-size: $font-size-h2;
   }
+
+  @media #{$small-and-down} {
+    font-size: $font-size-h3;
+    margin-bottom: 20px;
+  }
 }
 
 .paragraph {
@@ -52,6 +64,7 @@
   font-size: $font-size-h3;
 
   @media #{$medium-and-down} {
+    line-height: 1.6;
     font-size: $font-size-medium;
   }
 }
@@ -70,6 +83,15 @@
   align-items: center;
   justify-content: center;
   display: flex;
+
+  @media #{$medium-and-down} {
+    width: 150px;
+    height: 150px;
+
+    img {
+      max-width: 70px;
+    }
+  }
 
   &--is-solid {
     border: 2px solid $blue-base;

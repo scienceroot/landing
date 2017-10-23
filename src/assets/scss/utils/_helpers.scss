@@ -41,11 +41,19 @@
   margin-bottom: 40px;
   line-height: 1;
   font-size: $font-size-h1;
+
+  @media #{$medium-and-down} {
+    font-size: $font-size-h2;
+  }
 }
 
 .paragraph {
   color: $gray-lighter;
   font-size: $font-size-h3;
+
+  @media #{$medium-and-down} {
+    font-size: $font-size-medium;
+  }
 }
 
 .grid {

@@ -63,8 +63,7 @@ $navigation-offset: 40px;
       margin-right: 0px;
     }
 
-    &:hover,
-    &--is-active {
+    &:hover {
       a {
         color: $white;
       }

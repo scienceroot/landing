@@ -46,19 +46,10 @@ function onNavigation(scrollTop) {
 }
 
 /**
- * @description menu change
- */
-function onMenu(scrollTop) {
-
-}
-
-/**
  * @description fire when document is scrolling
  */
 function onScroll() {
   var scrollTop = document.documentElement.scrollTop;
-  
-  onMenu(scrollTop);
   onNavigation(scrollTop);
 }
 

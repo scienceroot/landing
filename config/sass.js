@@ -6,7 +6,7 @@ const sourcemaps = require('gulp-sourcemaps')
 const bundle = browserSync => {
 
   return gulp.src('./src/assets/scss/style.scss')
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
     .pipe(autoprefix({ browsers: ['last 5 versions', 'ie 10'] }))
     // .pipe(sourcemaps.write())

@@ -18,7 +18,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 a { text-decoration: none; }
 
-input, button { outline: 0; padding: 0; border: 0; background: transparent; font-family: "Canaro", Helvetica Neue, Arial, sans-serif; }
+input, button { outline: 0; padding: 0; border: 0; background: transparent; font-family: "Canaro-Light", Helvetica Neue, Arial, sans-serif; }
 
 button { cursor: pointer; }
 
@@ -53,7 +53,9 @@ button { cursor: pointer; }
 
 .box--is-solid { border: 2px solid #187CFB; -webkit-box-shadow: inset 0 5px 10px rgba(16, 15, 31, 0.5), 0 0 30px rgba(24, 124, 251, 0.2); box-shadow: inset 0 5px 10px rgba(16, 15, 31, 0.5), 0 0 30px rgba(24, 124, 251, 0.2); background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 12, 22, 0.8)), to(rgba(8, 24, 56, 0.8))); background: -webkit-linear-gradient(top, rgba(4, 12, 22, 0.8) 0%, rgba(8, 24, 56, 0.8) 100%); background: -o-linear-gradient(top, rgba(4, 12, 22, 0.8) 0%, rgba(8, 24, 56, 0.8) 100%); background: linear-gradient(to bottom, rgba(4, 12, 22, 0.8) 0%, rgba(8, 24, 56, 0.8) 100%); }
 
-body { font-family: "Canaro", Helvetica Neue, Arial, sans-serif; font-size: 16px; background: #100F1F; color: #F4F4F4; }
+@font-face { font-family: 'Canaro-Light'; src: url("../fonts/Canaro-Light-webfont.woff2") format("woff2"), url("../fonts/Canaro-Light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
+
+body { font-family: "Canaro-Light", Helvetica Neue, Arial, sans-serif; font-size: 16px; background: #100F1F; color: #F4F4F4; }
 
 section { line-height: 1.4; padding-top: 180px; background-image: url("../images/world.png"); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
@@ -176,6 +178,10 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .video__box { border-radius: 5px; overflow: hidden; -webkit-box-shadow: 0 10px 40px #070700; box-shadow: 0 10px 40px #070700; }
 
+.video__placeholder { display: -webkit-box; display: -ms-flexbox; display: flex; min-height: 400px; border-radius: 15px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-image: -webkit-gradient(linear, left top, left bottom, from(#0F1528), to(#172041)); background-image: -webkit-linear-gradient(top, #0F1528 0%, #172041 100%); background-image: -o-linear-gradient(top, #0F1528 0%, #172041 100%); background-image: linear-gradient(-180deg, #0F1528 0%, #172041 100%); -webkit-box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.4); box-shadow: 0 40px 60px 0 rgba(0, 0, 0, 0.4); border-radius: 15px; color: #47576C; font-family: "Montserrat", Helvetica, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.88px; font-size: 24px; }
+
+@media only screen and (max-width: 660px) { .video__placeholder { min-height: 300px; } }
+
 .team { text-align: center; }
 
 @media only screen and (max-width: 660px) { .team { background-size: 100% auto; } }
@@ -188,7 +194,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 660px) { .team__member { padding-bottom: 40px; } }
 
-.team__member > img { display: block; max-width: 140px; border-radius: 50%; margin-left: auto; margin-right: auto; margin-bottom: 20px; }
+.team__member > img { display: block; max-width: 120px; border-radius: 50%; margin-left: auto; margin-right: auto; margin-bottom: 20px; }
 
 .team__member h2 { font-size: 24px; color: #B1B7C1; }
 
@@ -214,7 +220,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .roadmap__timeline-item { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-@media only screen and (max-width: 992px) { .roadmap__timeline-item { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
+@media only screen and (max-width: 992px) { .roadmap__timeline-item { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
 
 .roadmap__timeline-item i { width: 8px; height: 8px; display: block; border-radius: 50%; background: #124276; border: 2px solid #100F1F; }
 

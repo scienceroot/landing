@@ -39,6 +39,7 @@ $black-darker: #070700;
     text-transform: uppercase;
     letter-spacing: 0.88px;
     font-size: $font-size-large;
+    overflow: hidden;
 
     @media #{$small-and-down} {
       min-height: 300px;

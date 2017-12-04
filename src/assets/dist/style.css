@@ -149,9 +149,13 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .guarantees__about h2 { font-size: 24px; margin-bottom: 10px; }
 
+.guarantees__about ul { padding-left: 15px; }
+
+.guarantees__about li { margin-bottom: 5px; list-style-type: disc; font-size: 14px; color: #B1B7C1; text-align: left; }
+
 .guarantees__about .icon-checkmark { display: inline-block; vertical-align: middle; margin-left: 5px; }
 
-.guarantees__about .paragraph { font-size: 14px; }
+.guarantees__about .paragraph { text-align: left; font-size: 14px; margin-bottom: 15px; }
 
 .guarantees__about .box { margin: 0 auto 40px; }
 

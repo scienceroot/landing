@@ -22,6 +22,18 @@ $guarantees-offset: 100px;
       margin-bottom: 10px;          
     }
 
+    ul {
+      padding-left: 15px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      list-style-type: disc;
+      font-size: $font-size-small;
+      color: $gray-lighter;
+      text-align: left;
+    }
+
     .icon-checkmark {
       display: inline-block;
       vertical-align: middle;
@@ -29,7 +41,9 @@ $guarantees-offset: 100px;
     }
 
     .paragraph {
+      text-align: left;
       font-size: $font-size-small;
+      margin-bottom: 15px;
     }
 
     .box {

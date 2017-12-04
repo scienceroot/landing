@@ -204,7 +204,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 992px) { .team__member p { font-size: 16px; } }
 
-.team__member .grid img { display: block; }
+.team__member .grid img { display: block; height: 30px; width: 30px; }
 
 .team__member .grid__cell { margin: 0 5px; }
 

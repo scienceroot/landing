@@ -202,7 +202,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 660px) { .team__members { margin-top: 70px; margin-bottom: -40px; } }
 
-.team__member { -ms-flex-preferred-size: 190px; flex-basis: 190px; padding-left: 20px; padding-left: 20px; padding-bottom: 60px; }
+.team__member { -ms-flex-preferred-size: 250px; flex-basis: 250px; padding-bottom: 60px; }
 
 @media only screen and (max-width: 660px) { .team__member { padding-bottom: 40px; } }
 

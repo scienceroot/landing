@@ -28,9 +28,7 @@ $team-offset: 100px;
   }
 
   &__member {
-    flex-basis: 190px;
-    padding-left: 20px;
-    padding-left: 20px;
+    flex-basis: 250px;    
     padding-bottom: 60px;
 
     @media #{$small-and-down} {

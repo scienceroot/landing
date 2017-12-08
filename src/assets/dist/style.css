@@ -67,6 +67,12 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .goup img { width: 20px; height: auto; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
+.tooltip { z-index: 100; position: absolute; min-width: 250px; border-radius: 3px; background: #124276; line-height: 1.6; font-size: 12px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); display: none; padding: 10px; bottom: 35px; left: 50%; }
+
+.tooltip:after { content: ""; border-style: solid; border-width: 7px 5px 0 5px; border-color: #124276 transparent transparent transparent; display: block; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); bottom: -7px; left: 50%; }
+
+@media only screen and (max-width: 992px) { .tooltip:after { display: none; } }
+
 ::-webkit-input-placeholder { color: #B1B7C1; }
 
 ::-moz-placeholder { color: #B1B7C1; }
@@ -226,7 +232,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 992px) { .roadmap__timeline-item { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); } }
 
-.roadmap__timeline-item i { width: 8px; height: 8px; display: block; border-radius: 50%; background: #124276; border: 2px solid #100F1F; }
+.roadmap__timeline-item i { width: 8px; height: 8px; display: block; border-radius: 50%; background: #124276; border: 2px solid #100F1F; -webkit-transition: 300ms linear; -o-transition: 300ms linear; transition: 300ms linear; }
 
 @media only screen and (max-width: 992px) { .roadmap__timeline-item i { margin-left: 30px; margin-right: 30px; } }
 
@@ -234,19 +240,21 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 992px) { .roadmap__timeline-item p, .roadmap__timeline-item small { left: 0; position: relative; text-align: left; -webkit-transform: none; -ms-transform: none; transform: none; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; } }
 
-.roadmap__timeline-item div { position: relative; }
+.roadmap__timeline-item > div { z-index: 100; position: relative; cursor: pointer; }
 
-@media only screen and (max-width: 992px) { .roadmap__timeline-item div { top: 0; left: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
+.roadmap__timeline-item > div:hover i { -webkit-transform: scale(2.5); -ms-transform: scale(2.5); transform: scale(2.5); }
+
+.roadmap__timeline-item > div:hover .tooltip { display: block; }
+
+@media only screen and (max-width: 992px) { .roadmap__timeline-item > div { top: 0; left: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
 
 .roadmap__timeline-item p { top: 30px; color: #B1B7C1; font-size: 16px; }
 
-@media only screen and (max-width: 992px) { .roadmap__timeline-item p { text-align: right; } }
-
-@media only screen and (max-width: 660px) { .roadmap__timeline-item p { top: 0; } }
+@media only screen and (max-width: 992px) { .roadmap__timeline-item p { top: 0; text-align: right; } }
 
 .roadmap__timeline-item small { top: -40px; color: #47576C; font-size: 14px; }
 
-@media only screen and (max-width: 660px) { .roadmap__timeline-item small { top: 0; } }
+@media only screen and (max-width: 992px) { .roadmap__timeline-item small { top: 0; } }
 
 .roadmap__timeline-item:after { content: ''; height: 2px; width: 100%; display: block; background: #124276; }
 

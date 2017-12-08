@@ -52,6 +52,7 @@
       border-radius: 50%;
       background: $blue-lighter;
       border: 2px solid $black;
+      transition: $transition linear;
 
       @media #{$medium-and-down} {
         margin-left: 30px;
@@ -75,8 +76,20 @@
       }
     }
 
-    div {
+    > div {
+      z-index: 100;
       position: relative;
+      cursor: pointer;
+
+      &:hover {
+        i {
+          transform: scale(2.5);
+        }
+
+        .tooltip {
+          display: block;
+        }
+      }
 
       @media #{$medium-and-down} {
         top: 0;
@@ -95,11 +108,8 @@
       font-size: $font-size-base;  
       
       @media #{$medium-and-down} {
-        text-align: right;
-      }
-
-      @media #{$small-and-down} {
         top: 0;
+        text-align: right;
       }
     }
 
@@ -108,7 +118,7 @@
       color: $gray-darker;
       font-size: $font-size-small;  
       
-      @media #{$small-and-down} {
+      @media #{$medium-and-down} {
         top: 0;
       }
     }

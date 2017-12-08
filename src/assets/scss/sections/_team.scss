@@ -2,17 +2,24 @@ $team-offset: 100px;
 
 .team {
   text-align: center;
+  margin-bottom: -60px;
+
+  .container {
+    max-width: 1340px;
+  }
   
   @media #{$small-and-down} {
     background-size: 100% auto;
   }
 
+  .paragraph {
+    margin-bottom: 80px;
+  }
+
   &__members {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
     flex-wrap: wrap;
-    margin-bottom: -60px;
 
     @media #{$small-and-down} {
       margin-top: 70px;

@@ -4,9 +4,9 @@ $team-offset: 100px;
   text-align: center;
   margin-bottom: -60px;
 
-  .container {
-    max-width: 1340px;
-  }
+  // .container {
+  //   max-width: 1340px;
+  // }
   
   @media #{$small-and-down} {
     background-size: 100% auto;
@@ -49,6 +49,7 @@ $team-offset: 100px;
 
     // name
     h2 {
+      white-space: nowrap;
       font-size: $font-size-large;
       color: $gray-lighter;
 

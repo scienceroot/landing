@@ -194,8 +194,6 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .team { text-align: center; margin-bottom: -60px; }
 
-.team .container { max-width: 1340px; }
-
 @media only screen and (max-width: 660px) { .team { background-size: 100% auto; } }
 
 .team .paragraph { margin-bottom: 80px; }
@@ -210,7 +208,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .team__member > img { display: block; max-width: 120px; border-radius: 50%; margin-left: auto; margin-right: auto; margin-bottom: 20px; }
 
-.team__member h2 { font-size: 24px; color: #B1B7C1; }
+.team__member h2 { white-space: nowrap; font-size: 24px; color: #B1B7C1; }
 
 @media only screen and (max-width: 992px) { .team__member h2 { font-size: 24px; } }
 

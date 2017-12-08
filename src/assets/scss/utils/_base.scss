@@ -62,14 +62,16 @@ section {
 
 .tooltip {
   z-index: 100;
-  position: absolute;
+  visibility: hidden;
+  opacity: 0;  
+  transition: $transition linear;
   min-width: 250px;
   border-radius: 3px;
   background: $blue-lighter;
   line-height: 1.6;
   font-size: $font-size-little;
-  transform: translateX(-50%);
-  display: none;
+  transform: translateX(-50%) translateY(10px);
+  position: absolute;
   padding: 10px;
   bottom: 35px;
   left: 50%;

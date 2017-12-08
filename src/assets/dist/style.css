@@ -67,7 +67,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .goup img { width: 20px; height: auto; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
-.tooltip { z-index: 100; position: absolute; min-width: 250px; border-radius: 3px; background: #124276; line-height: 1.6; font-size: 12px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); display: none; padding: 10px; bottom: 35px; left: 50%; }
+.tooltip { z-index: 100; visibility: hidden; opacity: 0; -webkit-transition: 300ms linear; -o-transition: 300ms linear; transition: 300ms linear; min-width: 250px; border-radius: 3px; background: #124276; line-height: 1.6; font-size: 12px; -webkit-transform: translateX(-50%) translateY(10px); -ms-transform: translateX(-50%) translateY(10px); transform: translateX(-50%) translateY(10px); position: absolute; padding: 10px; bottom: 35px; left: 50%; }
 
 .tooltip:after { content: ""; border-style: solid; border-width: 7px 5px 0 5px; border-color: #124276 transparent transparent transparent; display: block; position: absolute; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); bottom: -7px; left: 50%; }
 
@@ -244,7 +244,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .roadmap__timeline-item > div:hover i { -webkit-transform: scale(2.5); -ms-transform: scale(2.5); transform: scale(2.5); }
 
-.roadmap__timeline-item > div:hover .tooltip { display: block; }
+.roadmap__timeline-item > div:hover .tooltip { opacity: 1; visibility: visible; -webkit-transform: translateX(-50%) translateY(0px); -ms-transform: translateX(-50%) translateY(0px); transform: translateX(-50%) translateY(0px); }
 
 @media only screen and (max-width: 992px) { .roadmap__timeline-item > div { top: 0; left: 50%; display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
 

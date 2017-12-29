@@ -317,6 +317,10 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .subscribe p.or { font-size: 35px; }
 
+.subscribe a.contact { color: #B1B7C1; }
+
+.subscribe a.contact:hover { color: #B1B7C1; text-decoration: underline; }
+
 .whitepaper { padding-top: 80px; text-align: center; background-image: none; }
 
 .whitepaper p { font-size: 14px; margin-bottom: 10px; }

@@ -32,4 +32,13 @@
   p.or {
     font-size: $font-size-35;
   }
+
+  a.contact {
+    color: $gray-lighter;
+  }
+
+  a.contact:hover {
+    color: $gray-lighter;
+    text-decoration: underline;
+  }
 }

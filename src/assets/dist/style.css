@@ -1,4 +1,7 @@
-/* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain) */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -220,6 +223,36 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .team__member .grid__cell { margin: 0 5px; }
 
+.advisors { text-align: center; margin-bottom: -60px; }
+
+@media only screen and (max-width: 660px) { .advisors { background-size: 100% auto; } }
+
+.advisors .paragraph { margin-bottom: 80px; }
+
+.advisors__advisors { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+@media only screen and (max-width: 660px) { .advisors__advisors { margin-top: 70px; margin-bottom: -40px; } }
+
+.advisors__advisor { -ms-flex-preferred-size: 270px; flex-basis: 270px; padding-bottom: 60px; padding-right: 35px; }
+
+@media only screen and (max-width: 660px) { .advisors__advisor { padding-bottom: 40px; } }
+
+.advisors__advisor > img { display: block; max-width: 120px; border-radius: 50%; margin-left: auto; margin-right: auto; margin-bottom: 20px; }
+
+.advisors__advisor h2 { white-space: nowrap; font-size: 24px; color: #B1B7C1; }
+
+@media only screen and (max-width: 992px) { .advisors__advisor h2 { font-size: 24px; } }
+
+.advisors__advisor p.bio { color: #F4F4F4; font-size: 16px; margin-bottom: 20px; }
+
+.advisors__advisor p { color: #47576C; font-size: 18px; margin-bottom: 10px; }
+
+@media only screen and (max-width: 992px) { .advisors__advisor p { font-size: 16px; } }
+
+.advisors__advisor .grid img { display: block; height: 30px; width: 30px; }
+
+.advisors__advisor .grid__cell { margin: 0 5px; }
+
 .roadmap .title, .roadmap .paragraph { text-align: center; }
 
 .roadmap__timeline { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 100px; margin-left: auto; margin-right: auto; text-align: center; padding-left: 100px; padding-right: 100px; position: relative; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; min-height: 100px; }
@@ -281,6 +314,8 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 .subscribe form input { color: #F4F4F4; font-size: 28px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
 @media only screen and (max-width: 660px) { .subscribe form input { font-size: 18px; } }
+
+.subscribe p.or { font-size: 35px; }
 
 .whitepaper { padding-top: 80px; text-align: center; background-image: none; }
 

@@ -18,6 +18,32 @@
   <link rel="stylesheet" href="assets/dist/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500">
   <title>Scienceroot | First Blockchain-Based Scientific Ecosystem</title>
+
+  <style>
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #187CFB;
+        min-width: 160px;
+        overflow: auto;
+        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown a:hover {
+      text-decoration: underline;
+    }
+    
+    .show {display:block;}
+    </style>
+
 </head>
 
 <body>
@@ -41,9 +67,13 @@
           <a href="#subscribe" data-scroll>Subscribe</a>
         </li>
         <li class="navigation__menu-item">
-          <a href="whitepaper.pdf" class="button" target="_blank">
-            <img src="assets/images/download.svg" width="14" class="icon icon-download" /> Whitepaper
-          </a>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="button"><img src="assets/images/download.svg" width="14" class="icon icon-download" /> Resources</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="whitepaper.pdf" target="_blank">Whitepaper</a>
+                <a href="scienceroot_intro.pdf" target="_blank">Short introduction</a>
+              </div>
+            </div>            
         </li>
       </ul>
     </div>
@@ -282,7 +312,7 @@
           <img src="assets/images/team/james.png" />
           <h2>James Lovgren</h2>
           <p>Scientific and Product Advisor</p>
-          <p class="bio">Biotech executive and blockchain technology investor. He has a distinguished track record of commercializing disruptive technologies into pharmaceutical, biotech, and life science markets. His background includes working at both start-ups and Fortune 200 life science companies.</p>
+          <p class="bio">Is a biotech executive and blockchain investor with a distinguished track record of commercializing disruptive technologies into the life science market. His background includes working at both start-ups and Fortune 200 life science companies.</p>
           <div class="grid">
             <a href="https://www.linkedin.com/in/jameslovgren" class="grid__cell" target="_blank">
               <img src="assets/images/linkedin-social.svg"/>
@@ -407,19 +437,15 @@
   </section>
 
   <section class="whitepaper" id="whitepaper">
-    <div class="container container--is-large">
-      <p class="paragraph" data-animate-whitepaper>Download the Whitepaper</p>
-
-      <div class="grid" data-animate-whitepaper>
-        <i></i>
-        <a class="button button--is-large" href="whitepaper.pdf" target="_blank">
-          <img src="assets/images/download.svg" width="14" class="icon icon-download" /> Whitepaper
-        </a>
-        <i></i>
-      </div>
-    </div>
+    <h1 class="title" data-animate-subscribe>Press</h1>
+    <a href="https://www.nature.com/articles/d41586-017-08589-4?utm_source=FBK_NatureNews&sf176682185=1" target="_blank"><img src="assets/images/nature.com.svg" class="space-right-50" /> </a>
+    <a href="http://mobil.derstandard.at/2000069965446/Peer-to-Peer-Wissenschaftsverlage-funktionieren-nicht-oder-doch" target="_blank"><img src="assets/images/derStandard.png" width="250" height="40" class="space-left-50" /></a>
+    <h1 class="title latest-news" data-animate-subscribe>Latest news</h1>    
     <br />
-    <a class="twitter-timeline" data-width="500" data-height="1000" data-theme="dark" href="https://twitter.com/scienceroot?ref_src=twsrc%5Etfw">Tweets by scienceroot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="500" data-height="300" data-theme="dark" href="https://twitter.com/scienceroot?ref_src=twsrc%5Etfw">Tweets by scienceroot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- <a href="https://t.me/scienceroot" target="_blank" class="contact">Follow us on Telegram</a>
+    <a href="https://medium.com/scienceroot" target="_blank" class="contact">Follow us on Medium</a>     -->
 
   </section>
 
@@ -481,6 +507,28 @@
   <a href="#introduction" class="goup" data-scroll>
     <img src="assets/images/arrow.svg" />
   </a>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.button')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109748162-1"></script>

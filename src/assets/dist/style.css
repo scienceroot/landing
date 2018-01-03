@@ -315,7 +315,7 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 660px) { .subscribe form input { font-size: 18px; } }
 
-.subscribe p.or { font-size: 35px; }
+.subscribe p.or { font-size: 35px; margin-bottom: 30px; margin-top: 30px; }
 
 .subscribe a.contact { color: #B1B7C1; }
 
@@ -332,6 +332,12 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 .whitepaper .button { margin-left: 10px; margin-right: 10px; }
 
 .whitepaper .button img { width: 24px; margin-right: 10px; }
+
+.whitepaper .latest-news { margin-top: 40px; }
+
+.whitepaper .space-left-50 { margin-left: 50px; }
+
+.whitepaper .space-right-50 { margin-right: 50px; }
 
 .footer { padding-top: 100px; padding-bottom: 40px; overflow: hidden; position: relative; }
 

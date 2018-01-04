@@ -31,7 +31,29 @@
   }
 
   .latest-news {
-    margin-top: 40px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+
+  .press {
+    margin-bottom: 120px;
+  }
+
+  .follow-text {
+    font-size: $font-size-h2;
+    color: $gray-lighter;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+  .follow-link {
+    font-size: $font-size-h3;
+    color: $gray-darker;
+    line-height: 1;
+  }
+
+  .space-left-120 {
+    margin-left: 120px;
   }
 
   .space-left-50 {

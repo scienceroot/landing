@@ -333,7 +333,15 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 .whitepaper .button img { width: 24px; margin-right: 10px; }
 
-.whitepaper .latest-news { margin-top: 40px; }
+.whitepaper .latest-news { margin-top: 120px; margin-bottom: 120px; }
+
+.whitepaper .press { margin-bottom: 120px; }
+
+.whitepaper .follow-text { font-size: 54px; color: #B1B7C1; line-height: 1; font-weight: bold; }
+
+.whitepaper .follow-link { font-size: 28px; color: #47576C; line-height: 1; }
+
+.whitepaper .space-left-120 { margin-left: 120px; }
 
 .whitepaper .space-left-50 { margin-left: 50px; }
 

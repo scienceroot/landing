@@ -30,10 +30,13 @@ $advisor-offset: 100px;
   &__advisor {
     flex-basis: 270px;    
     padding-bottom: 60px;
-    padding-right: 35px;
 
     @media #{$small-and-down} {
       padding-bottom: 40px;
+    }
+
+    @media #{$small-and-up} {
+      padding-right: 35px;
     }
 
     // avatar

@@ -6,21 +6,19 @@
   font-style: normal;
 }
 
-
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
   background: $black;
   color: $white;
+  background-image: url('../images/world.png');
+  background-repeat: repeat-y;
+  background-position: center;
 }
 
 section {  
   line-height: 1.4;
   padding-top: 180px;
-  background-image: url('../images/world.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
   @media #{$small-and-down} {
     padding-top: 140px;

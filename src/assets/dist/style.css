@@ -58,9 +58,9 @@ button { cursor: pointer; }
 
 @font-face { font-family: 'Canaro-Light'; src: url("../fonts/Canaro-Light-webfont.woff2") format("woff2"), url("../fonts/Canaro-Light-webfont.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-body { font-family: "Canaro-Light", Helvetica Neue, Arial, sans-serif; font-size: 16px; background: #100F1F; color: #F4F4F4; }
+body { font-family: "Canaro-Light", Helvetica Neue, Arial, sans-serif; font-size: 16px; background: #100F1F; color: #F4F4F4; background-image: url("../images/world.png"); background-repeat: repeat-y; background-position: center; }
 
-section { line-height: 1.4; padding-top: 180px; background-image: url("../images/world.png"); background-repeat: no-repeat; background-position: center; background-size: cover; }
+section { line-height: 1.4; padding-top: 180px; }
 
 @media only screen and (max-width: 660px) { section { padding-top: 140px; } }
 
@@ -233,9 +233,11 @@ section { line-height: 1.4; padding-top: 180px; background-image: url("../images
 
 @media only screen and (max-width: 660px) { .advisors__advisors { margin-top: 70px; margin-bottom: -40px; } }
 
-.advisors__advisor { -ms-flex-preferred-size: 270px; flex-basis: 270px; padding-bottom: 60px; padding-right: 35px; }
+.advisors__advisor { -ms-flex-preferred-size: 270px; flex-basis: 270px; padding-bottom: 60px; }
 
 @media only screen and (max-width: 660px) { .advisors__advisor { padding-bottom: 40px; } }
+
+@media only screen and (min-width: 660px) { .advisors__advisor { padding-right: 35px; } }
 
 .advisors__advisor > img { display: block; max-width: 120px; border-radius: 50%; margin-left: auto; margin-right: auto; margin-bottom: 20px; }
 

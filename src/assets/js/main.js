@@ -13,6 +13,7 @@ var SECTIONS = [
   'roadmap',
   'subscribe',
   'whitepaper',
+  'partners',
   'footer'
 ];
 

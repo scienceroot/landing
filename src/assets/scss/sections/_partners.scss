@@ -1,0 +1,27 @@
+.partners {
+  padding-top: 80px;
+  text-align: center;
+  background-image: none;
+
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .partner {
+    margin-bottom: 180px;
+  }
+
+  .space-left-120 {
+    margin-left: 120px;
+  }
+
+  .space-left-50 {
+    margin-left: 50px;
+  }
+
+  .space-right-50 {
+    margin-right: 50px;
+  }
+}

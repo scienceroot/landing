@@ -44,12 +44,20 @@
     color: $gray-lighter;
     line-height: 1;
     font-weight: bold;
+
+    @media #{$medium-and-up} {
+      margin-left: 120px;
+    }
   }
 
   .follow-link {
     font-size: $font-size-h3;
     color: $gray-darker;
     line-height: 1;
+
+    @media #{$medium-and-up} {
+      margin-left: 120px;
+    }
   }
 
   .space-left-120 {

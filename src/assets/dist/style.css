@@ -353,7 +353,11 @@ section { line-height: 1.4; padding-top: 180px; }
 
 .whitepaper .follow-text { font-size: 54px; color: #B1B7C1; line-height: 1; font-weight: bold; }
 
+@media only screen and (min-width: 992px) { .whitepaper .follow-text { margin-left: 120px; } }
+
 .whitepaper .follow-link { font-size: 28px; color: #47576C; line-height: 1; }
+
+@media only screen and (min-width: 992px) { .whitepaper .follow-link { margin-left: 120px; } }
 
 .whitepaper .space-left-120 { margin-left: 120px; }
 

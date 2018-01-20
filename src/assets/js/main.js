@@ -12,8 +12,10 @@ var SECTIONS = [
   'team-member',
   'roadmap',
   'subscribe',
+  'latest-news',
   'whitepaper',
   'partners',
+  'press',
   'footer'
 ];
 

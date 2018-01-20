@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Scienceroot | A blockchain-based ecosystem to cover the needs of every academician, scientist and researcher. We combine a collaboration platform, funding platform and a journal." />
+  <meta name="keywords" content="blockchain, scientific, ecosystem, academic">
   <meta property="og:title" content="Scienceroot | First Blockchain-Based Scientific Ecosystem">
   <meta property="og:description" content="A blockchain-based ecosystem to cover the needs of every academician, scientist and researcher. We combine a collaboration platform, funding platform and a journal.">
   <meta property="og:url" content="https://scienceroot.com/index.html">
@@ -18,32 +19,6 @@
   <link rel="stylesheet" href="assets/dist/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500">
   <title>Scienceroot | First Blockchain-Based Scientific Ecosystem</title>
-
-  <style>
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #100f1f;
-        min-width: 160px;
-        overflow: auto;
-        /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-        z-index: 1;
-    }
-    
-    .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    .dropdown a:hover {
-      text-decoration: underline;
-    }
-    
-    .show {display:block;}
-    </style>
-
 </head>
 
 <body>
@@ -68,13 +43,13 @@
         </li>
         <li class="navigation__menu-item">
           <div class="dropdown">
-            <button onclick="myFunction()" class="button"><img src="assets/images/download.svg" width="14" class="icon icon-download" /> Resources</button>
-              <div id="myDropdown" class="dropdown-content">
+            <button onclick="showMenuDropDown()" class="button"><img src="assets/images/download.svg" width="14" class="icon icon-download" /> Resources</button>
+              <div id="menuDropDown" class="dropdown-content">
                 <a href="assets/resources/whitepaper.pdf" target="_blank">Whitepaper</a>
                 <a href="assets/resources/short-intro.pdf" target="_blank">Short introduction</a>
                 <a href="assets/resources/roadmap.pdf" target="_blank">Roadmap</a>                
               </div>
-            </div>            
+            </div>
         </li>
       </ul>
     </div>
@@ -186,6 +161,24 @@
       <div class="grid guarantees__secured" data-animate-guarantees>
         <img class="grid__cell" src="assets/images/lock.svg" height="62" />
         <h2 class="title grid__cell">Everything will be accessible through one account to which only you will have the key.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="whitepaper" id="whitepaper">
+    <div class="container container--is-large">
+      <p class="paragraph" data-animate-whitepaper>Download resources</p>
+      <div class="grid" data-animate-whitepaper>
+        <i></i>
+          <div class="dropdown">
+            <button onclick="showPageDropDownMenu()" class="button button--is-large"><img src="assets/images/download.svg" width="14" class="icon icon-download" /> Resources</button>
+            <div id="pageDropDown" class="dropdown-content">
+              <a href="assets/resources/whitepaper.pdf" target="_blank">Whitepaper</a>
+              <a href="assets/resources/short-intro.pdf" target="_blank">Short introduction</a>
+              <a href="assets/resources/roadmap.pdf" target="_blank">Roadmap</a>                
+            </div>
+          </div>
+        <i></i>
       </div>
     </div>
   </section>
@@ -355,15 +348,14 @@
     </div>
   </section>
 
-  <section class="partners" id="partners">
-    <h2 class="title partner" data-animate-partners>Partners</h2>
-    
-    <div class="team__members">
-      <div class="space-right-50" data-animate-partners>
+  <section class="partners" id="partners" data-animate-partners>
+    <h2 class="title">Partners</h2>
+    <div class="partners__partners">
+      <div class="partners__partner" data-animate-press>
         <a href="http://exeterempirical.com/" class="grid__cell" target="_blank" title="Exeter Empirical"><img src="assets/images/exeter.png" height="90px" alt="exeterempirical" /> </a>
       </div>
-      <div class="space-left-50" data-animate-partners>
-        <a href="https://www.overleaf.com" title="Overleaf" target="_blank">
+      <div class="partners__partner" data-animate-press>
+        <a href="https://www.overleaf.com" title="Overleaf" target="_blank" class="grid__cell">
           <img src="https://www.overleaf.com/overleaf-partner/overleaf-greygreen-410.png" alt="Overleaf" height="90px"></a>
       </div>
     </div>
@@ -451,22 +443,22 @@
     <p class="paragraph" data-animate-subscribe><a class="contact" href="mailto:contact@scienceroot.com" target="_top">contact@scienceroot.com</a></p>
   </section>
 
-  <section class="whitepaper" id="whitepaper">
-    <h2 class="title press" data-animate-subscribe>Press</h2>
+  <section class="whitepaper" id="whitepaper" data-animate-press>
+    <h2 class="title press">Press</h2>
     
     <div class="team__members">
-      <div class="team__member" data-animate-subscribe>
+      <div class="team__member" data-animate-press>
         <a href="https://www.nature.com/articles/d41586-017-08589-4?utm_source=FBK_NatureNews&sf176682185=1" class="grid__cell" target="_blank"><img src="assets/images/nature.com.svg" alt="nature.com logo" /> </a>
       </div>
-      <div class="team__member" data-animate-subscribe>
+      <div class="team__member" data-animate-press>
         <a href="http://mobil.derstandard.at/2000069965446/Peer-to-Peer-Wissenschaftsverlage-funktionieren-nicht-oder-doch" target="_blank" class="grid__cell"><img src="assets/images/derStandard.png" width="250" height="40" alt="derStandard.at logo" /></a>
       </div>
-      <div class="team__member" data-animate-subscribe>
+      <div class="team__member" data-animate-press>
         <a href="https://btcmanager.com/can-blockchain-help-science/" target="_blank" class="grid__cell"><img src="assets/images/btc_manager.png" width="180" height="40" alt="btcmanager.com logo" /></a>
       </div>
     </div>
     
-    <h2 class="title latest-news" data-animate-subscribe>Latest news</h2>    
+    <h2 class="title latest-news">Latest news</h2>    
     
     <br />
     <div class="team__members">
@@ -540,12 +532,12 @@
   </a>
 
   <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
+    function showMenuDropDown() {
+        document.getElementById("menuDropDown").classList.toggle("show");
     }
-    
+    function showPageDropDownMenu() {
+        document.getElementById("pageDropDown").classList.toggle("show");
+    }
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
       if (!event.target.matches('.button')) {

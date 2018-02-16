@@ -36,15 +36,10 @@ $team-offset: 100px;
       padding-bottom: 40px;
     }
 
-    // avatar
-    // > img {
-    //   display: block;
-    //   max-width: 120px;
-    //   border-radius: 50%;      
-    //   margin-left: auto;
-    //   margin-right: auto;
-    //   margin-bottom: 20px;
-    // }
+    @media #{$medium-and-up} {
+      padding-left: 13px;
+      padding-right: 13px;
+    }
 
     // name
     h2 {

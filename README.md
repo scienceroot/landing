@@ -1,5 +1,5 @@
 # Scienceroot 📖
-> First Blockchain-Based Scientific Journal
+> First Blockchain-Based Scientific Ecosystem
 
 ![Logo](https://i.imgur.com/BWHvN1C.png)
 
